@@ -1,5 +1,5 @@
 {% set name = "google-cloud-firestore" %}
-{% set version = "2.5.3" %}
+{% set version = "2.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/googleapis/python-firestore/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: d0732af0b298327231dbcd30e1a1cc465e7f641b83785835a55a5ec9e2c789ae
+  sha256: bcac8e321cae83eefb61cd6144120dea5c84704f6c8a7a0b9e60e1eb4f9917ae
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
-    - google-api-core-grpc >=1.31.5,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
+    - python >=3.7
+    - google-api-core-grpc >=1.32.0,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*
     - google-cloud-core >=1.4.1,<3.0.0dev
     - proto-plus >=1.20.5,<2.0.0dev
     - protobuf >=3.19.0,<4.0.0dev
