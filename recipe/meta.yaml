@@ -1,5 +1,5 @@
 {% set name = "google-cloud-firestore" %}
-{% set version = "2.7.0" %}
+{% set version = "2.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/googleapis/python-firestore/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 2137ba386cab06d103126d009acbbe720c38e71493b864ecee9d407fcb1c252d
+  sha256: a9131fc3cf1271bedcd7db24f021ee489c93b8a9740ce86e47776144f7340752
 
 build:
   noarch: python
