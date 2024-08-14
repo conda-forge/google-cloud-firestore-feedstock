@@ -1,13 +1,13 @@
 {% set name = "google-cloud-firestore" %}
-{% set version = "2.17.1" %}
+{% set version = "2.17.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-firestore-{{ version }}.tar.gz
-  sha256: e20469e752600e41300548e8f5a1690508c6d675e4d10a6ec0213d2fcaafc23e
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 9ea3c78f8df87e92c0be7c3fe598ab687c3093429ff9d41dbb8c433835367c40
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - google-auth >=2.14.1,<3.0.0dev,!=2.24.0,!=2.25.0
     - google-cloud-core >=1.4.1,<3.0.0dev
     - proto-plus >=1.22.0,<2.0.0dev
-    - protobuf >=3.19.5,<5.0.0dev,!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
+    - protobuf >=3.20.2,<6.0.0dev,!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
 
 test:
   imports:
