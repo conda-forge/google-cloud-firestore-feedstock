@@ -1,5 +1,5 @@
 {% set name = "google-cloud-firestore" %}
-{% set version = "2.18.0" %}
+{% set version = "2.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 3db5dd42334b9904d82b3786703a5a4b576810fb50f61b8fa83ecf4f17b7fdae
+  sha256: 1b2ce6e0b791aee89a1e4f072beba1012247e89baca361eed721fb467fe054b0
 
 build:
   noarch: python
