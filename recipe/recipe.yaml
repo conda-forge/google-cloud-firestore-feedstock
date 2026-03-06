@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-firestore
-  version: 2.23.0
+  version: "2.24.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: a9cffba7cdc6101111d6d54cde22d521c98f9e7d415e67486b137fa16f06aa03
+  sha256: e7f831f150e787c46ac3a96407f58d9edccd5455dbc9dae472f4cadb6daf6dc9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
