@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-firestore
-  version: "2.30.0"
+  version: "2.31.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 4959011b0dba6c71c056653ace1caef362169475314eddb036683010e99d98eb
+  sha256: f1e0f1352edbab3d327d3926fbd6f499eeecf41258b1d5edc3459c2c781bd5e5
 
 build:
   number: 0
